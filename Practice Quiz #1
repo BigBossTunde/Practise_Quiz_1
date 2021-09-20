@@ -1,0 +1,5 @@
+SELECT a.first_name,a.last_name,
+       CONCAT(a.first_name,' ',a.last_name) AS Full_Name,
+FROM actor a
+JOIN film_actor f
+ON a.actor_id = f.film_id
